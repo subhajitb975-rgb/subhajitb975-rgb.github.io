@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Subhajit Biswas | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --dark: #0f172a;
+      --gray: #64748b;
+      --light: #f8fafc;
+      --card: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.7;
+    }
+
+    section {
+      padding: 90px 8%;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+    }
+
+    p {
+      color: var(--gray);
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #e0e7ff, #f8fafc);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero span {
+      color: var(--primary);
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: var(--primary);
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(37,99,235,0.3);
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .title h2 {
+      font-size: 2.4rem;
+    }
+
+    /* CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 32px;
+      border-radius: 14px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.06);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    /* SKILLS */
+    .skills span {
+      display: inline-block;
+      padding: 10px 18px;
+      margin: 8px;
+      background: #e0e7ff;
+      color: #1e3a8a;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #020617;
+      color: #cbd5f5;
+      text-align: center;
+      padding: 30px;
+    }
+
+    footer span {
+      color: var(--primary);
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Hello, I’m <span>Subhajit Biswas</span>.</h1>
+    <p>
+      A technology professional focused on enterprise systems, automation,
+      and AI-driven innovation — building solutions that deliver real business impact.
+    </p>
+    <a href="#about" class="btn">Explore My Work</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="title">
+    <h2>About Me</h2>
+    <p>My professional journey and mindset</p>
+  </div>
+
+  <div style="max-width:900px;margin:auto;text-align:center;">
+    <p>
+      I am a technology professional driven by impact, innovation, and continuous learning.
+      My work spans enterprise database systems, automation, and modern AI-driven solutions,
+      where I focus on solving real-world problems with clarity and precision.
+    </p><br/>
+    <p>
+      I have hands-on experience supporting business-critical finance and HR applications,
+      automating SQL workflows using Control-M to ensure reliability, accuracy, and
+      operational excellence.
+    </p><br/>
+    <p>
+      I am a <strong>TCS AI Hackathon Winner (2025–26)</strong> and a
+      <strong>Google Certified Generative AI Leader</strong>, reflecting my ability
+      to blend deep technical execution with strategic AI thinking.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+  <div class="title">
+    <h2>Projects</h2>
+    <p>Enterprise systems and automation initiatives</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Enterprise Finance & HR Data Automation</h3>
+      <p>
+        Automated and optimized SQL workflows for internal finance and HR applications
+        using Control-M, improving batch reliability and reducing manual intervention.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>SQL Job Scheduling Framework</h3>
+      <p>
+        Designed a structured scheduling framework converting manual SQL scripts
+        into monitored, auditable jobs aligned with business timelines.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Enterprise Database Operations Support</h3>
+      <p>
+        Supported business-critical applications by optimizing queries,
+        resolving batch issues, and ensuring data consistency across systems.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section>
+  <div class="title">
+    <h2>Achievements</h2>
+    <p>Recognition and certifications</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>TCS AI Hackathon Winner (2025–26)</h3>
+      <p>
+        Built an end-to-end AI solution addressing a real world challenge, achieving top recognition for innovation, problem-solving approach, and execution quality.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Google Generative AI Leader Certification</h3>
+      <p>
+        Certified by Google for leadership-level expertise in Generative AI strategy,
+        responsible AI adoption, and enterprise use cases.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <div class="title">
+    <h2>Skills</h2>
+    <p>Technical and professional strengths</p>
+  </div>
+
+  <div class="skills" style="text-align:center;">
+    <span>SQL & Databases</span>
+    <span>Control-M Automation</span>
+    <span>Enterprise Systems</span>
+    <span>AI & Generative AI</span>
+    <span>Cloud Platforms</span>
+    <span>Problem Solving</span>
+    <span>System Reliability</span>
+    <span>Communication</span>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <div class="title">
+    <h2>Contact</h2>
+    <p>Let’s connect</p>
+  </div>
+
+  <div style="text-align:center;">
+    <p>
+      Interested in collaboration, opportunities, or discussions around
+      technology and AI?
+    </p><br/>
+    <a href="mailto:subhajitb975@gmail.com" class="btn">Get in Touch</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 <span>Subhajit Biswas</span>. All rights reserved.
+</footer>
+
+</body>
+</html>
